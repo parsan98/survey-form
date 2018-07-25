@@ -2,13 +2,175 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Survey</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="../css/main-style.css">
 </head>
 
 <body>
+  <h1 id="title">User Experience Survey</h1>
+  <hr>
+  <p id="description">Thank you for taking some time off to send us your
+    thoughts regarding our services. Your feedback is crucial to us in
+    our journey to deliver satisfaction.
+  </p>
+  <form id="survey-form">
+    <label for="name">Name
+      <input id="name"
+             name="name"
+             type="text"
+             required
+             placeholder="Please enter your full name">
+    </label>
+    <br>
+    <label for="email">Email id
+      <input id="email"
+             name="email"
+             type="email"
+             required
+             placeholder="Please enter your Email ID">
+    </label>
+    <br>
+    <label for="number">Age
+      <input id="number"
+             name="age"
+             type="number"
+             min="18"
+             max="110"
+             placeholder="xx">
+    </label>
+    <br>
+    <label for="gender">Gender
+      <input name="gender" value="M" type="radio" checked> Male
+      <input name="gender" value="F" type="radio"> Female
+      <input name="gender" value="O" type="radio"> Others
+    </label>
+    <br>
+    <label for="dropdown">Programme
+      <select id="dropdown" name="product">
+        <option disabled selected>Please select the programme</option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+    </label>
+    <br>
+    <table id="feedbackTable">
+      <caption>Feedback Questionnaire</caption>
+      <tr>
+        <th>Statement</th>
+        <th>Strongly agree</th>
+        <th>Agree</th>
+        <th>Neutral</th>
+        <th>Disagree</th>
+        <th>Strongly disagree</th>
+      </tr>
+      <tr>
+        <th>1. </th>
+        <td><input name="radio1" type="radio" value="5"></td>
+        <td><input name="radio1" type="radio" value="4"></td>
+        <td><input name="radio1" type="radio" value="3" checked></td>
+        <td><input name="radio1" type="radio" value="2"></td>
+        <td><input name="radio1" type="radio" value="1"></td>
+      </tr>
+      <tr>
+        <th>2. </th>
+        <td><input name="radio2" type="radio" value="5"></td>
+        <td><input name="radio2" type="radio" value="4"></td>
+        <td><input name="radio2" type="radio" value="3" checked></td>
+        <td><input name="radio2" type="radio" value="2"></td>
+        <td><input name="radio2" type="radio" value="1"></td>
+      </tr>
+      <tr>
+        <th>3. </th>
+        <td><input name="radio3" type="radio" value="5"></td>
+        <td><input name="radio3" type="radio" value="4"></td>
+        <td><input name="radio3" type="radio" value="3" checked></td>
+        <td><input name="radio3" type="radio" value="2"></td>
+        <td><input name="radio3" type="radio" value="1"></td>
+      </tr>
+      <tr>
+        <th>4. </th>
+        <td><input name="radio4" type="radio" value="5"></td>
+        <td><input name="radio4" type="radio" value="4"></td>
+        <td><input name="radio4" type="radio" value="3" checked></td>
+        <td><input name="radio4" type="radio" value="2"></td>
+        <td><input name="radio4" type="radio" value="1"></td>
+      </tr>
+      <tr>
+        <th>5. </th>
+        <td><input name="radio5" type="radio" value="5"></td>
+        <td><input name="radio5" type="radio" value="4"></td>
+        <td><input name="radio5" type="radio" value="3" checked></td>
+        <td><input name="radio5" type="radio" value="2"></td>
+        <td><input name="radio5" type="radio" value="1"></td>
+      </tr>
+    </table>
+    <div id="feedbackDiv">
+      <caption>Feedback Questionnaire</caption>
+      <br>
+      <label for="radio1"> 1.
+        <br>
+        <input name="radio1" type="radio" value="5"> Strongly agree <br>
+        <input name="radio1" type="radio" value="4"> Agree <br>
+        <input name="radio1" type="radio" value="3" checked> Neutral <br>
+        <input name="radio1" type="radio" value="2"> Disagree <br>
+        <input name="radio1" type="radio" value="1"> Strongly disagree <br>
+      </label>
+      <br>
+      <label for="radio1"> 2.
+        <br>
+        <input name="radio2" type="radio" value="5"> Strongly agree <br>
+        <input name="radio2" type="radio" value="4"> Agree <br>
+        <input name="radio2" type="radio" value="3" checked> Neutral <br>
+        <input name="radio2" type="radio" value="2"> Disagree <br>
+        <input name="radio2" type="radio" value="1"> Strongly disagree <br>
+      </label>
+      <br>
+      <label for="radio3"> 3.
+        <br>
+        <input name="radio3" type="radio" value="5"> Strongly agree <br>
+        <input name="radio3" type="radio" value="4"> Agree <br>
+        <input name="radio3" type="radio" value="3" checked> Neutral <br>
+        <input name="radio3" type="radio" value="2"> Disagree <br>
+        <input name="radio3" type="radio" value="1"> Strongly disagree <br>
+      </label>
+      <br>
+      <label for="radio1"> 4.
+        <br>
+        <input name="radio4" type="radio" value="5"> Strongly agree <br>
+        <input name="radio4" type="radio" value="4"> Agree <br>
+        <input name="radio4" type="radio" value="3" checked> Neutral <br>
+        <input name="radio4" type="radio" value="2"> Disagree <br>
+        <input name="radio4" type="radio" value="1"> Strongly disagree <br>
+      </label>
+      <br>
+      <label for="radio5"> 5.
+        <br>
+        <input name="radio5" type="radio" value="5"> Strongly agree <br>
+        <input name="radio5" type="radio" value="4"> Agree <br>
+        <input name="radio5" type="radio" value="3" checked> Neutral <br>
+        <input name="radio5" type="radio" value="2"> Disagree <br>
+        <input name="radio5" type="radio" value="1"> Strongly disagree <br>
+      </label>
+      <br>
+    </div>
+    <input type="checkbox" value="HC" required> I pledge on my
+      honor that this is an honest and true reflection on my experiences.
+    <br>
+    <input type="checkbox" value="TC" required> I agree to the
+      terms and conditions.
+    <br>
+    <textarea id="comments"
+              name="comments"
+              maxlength="200"
+              placeholder="Please enter your comments here"
+              rows=5></textarea>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
 </body>
 
 </html>

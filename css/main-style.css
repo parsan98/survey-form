@@ -1,1 +1,19 @@
 /* This is the main stylesheet */
+
+/* Supposed to be shifted to two different files */
+@media screen and (min-width: 900px){
+  #feedbackTable{
+    display: block;
+  }
+  #feedbackDiv{
+    display: none;
+  }
+}
+@media screen and (max-width: 899px){
+  #feedbackTable{
+    display: none;
+  }
+  #feedbackDiv{
+    display: block;
+  }
+}
