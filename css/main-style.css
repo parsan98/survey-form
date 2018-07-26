@@ -1,19 +1,89 @@
-/* This is the main stylesheet */
-
-/* Supposed to be shifted to two different files */
-@media screen and (min-width: 900px){
-  #feedbackTable{
-    display: block;
-  }
-  #feedbackDiv{
-    display: none;
+@media screen and (max-width: 310px) {
+  #survey-form{
+    padding: 10px 0px 30px 0px;
   }
 }
-@media screen and (max-width: 899px){
-  #feedbackTable{
-    display: none;
-  }
-  #feedbackDiv{
-    display: block;
-  }
+
+main{
+  text-size: 16px;
+  line-height: 1.25em;
+}
+
+#title {
+  line-height: 1em;
+  padding-top: 15px;
+}
+
+hr {
+  border-color: black;
+  background-color: black;
+  color: black;
+  height: 0.01px;
+}
+
+#description {
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#survey-form {
+  padding: 10px 20px 30px 20px;
+  background-color: snow;
+  border: solid;
+  border-color: black;
+  margin: 10px auto 25px auto;
+  max-width: 480px;
+}
+
+label{
+  display: inline-block;
+  width: 120px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+}
+
+#name, #email, #number {
+  margin-bottom: 15px;
+}
+
+#name, #email {
+  min-width: 180px;
+  width: 70%
+}
+
+#dropdown {
+  padding: 5px;
+  display: block;
+  text-align: center;
+  margin: 5px auto 0px auto;
+  width: 90%;
+  min-width: 225px;
+}
+
+h2 {
+  line-height: 0.75em;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+#comments{
+  min-width: 220px;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  margin: 15px auto 0px auto;
+  padding: 10px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
 }
